@@ -6,8 +6,6 @@ body {
 }
 
 header {
-  position: sticky;
-  top: 0;
   display: flex;
   background-color: lightblue;
   color: #060824;
@@ -35,8 +33,48 @@ body {
   padding: 1rem;
   font-size: 1rem;
   background-color: lightgreen;
-  margin: 1rem;
+  margin-top: 1rem;
   width: 10%;
   min-width: fit-content;
-  /* align-self: flex-end; */
+}
+
+.main {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.default-resource {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: lightblue;
+  font-size: 1.5rem;
+}
+
+/* Colors -  */
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+
+/* Font size - */
+.large {
+  font-size: 2rem;
+}
+.medium {
+  font-size: 1.5rem;
+}
+.small {
+  font-size: 1rem;
 }

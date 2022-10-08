@@ -2,11 +2,14 @@
 
 const postBtn = document.querySelector(".post-btn");
 const header = document.querySelector("header");
+const main = document.querySelector(".main");
 
-postBtn.addEventListener("click", createPost);
-
-function createPost() {
-  let post = document.createElement("div");
-  post.innerText = "This is a post";
-  document.body.appendChild(post);
+function generateCode(codeText, codeClassesName = ["default"]) {
+  let code = document.createElement("code");
+  code.innerHTML = `<div>${codeText}</div>`;
+  code.classList.add(...codeClassesName);
+  code.classList.add("default");
+  main.appendChild(code);
 }
+
+generateCode("hey asdf and chase are cool", ["blue", "large"]);
