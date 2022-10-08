@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: lightblue;
+  color: #060824;
+  font-family: monospace;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.roadmap {
+  font-size: 3rem;
+  font-family: "Caveat";
+}
+
+.info {
+  padding-top: 1.5rem;
+  font-size: 1rem;
+}
+
+body {
+  height: 200vh;
+}
+
+.post-btn {
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: lightgreen;
+  margin: 1rem;
+  width: 10%;
+  min-width: fit-content;
+  /* align-self: flex-end; */
+}
