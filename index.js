@@ -12,4 +12,4 @@ function generateCode(codeText, codeClassesName = ["default"]) {
   main.appendChild(code);
 }
 
-generateCode("hey asdf and chase are cool", ["blue", "large"]);
+generateCode("hey asdf and chase and snake are cool", ["blue", "large"]);
