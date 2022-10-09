@@ -1,14 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+
+*::selection {
+  background-color: white;
+  color: black;
+}
+
+* {
+  margin: 0;
+}
 
 body {
-  padding: 0;
-  margin: 0;
+  font-family: "Balsamiq Sans", sans;
 }
 
 header {
   display: flex;
-  background-color: lightblue;
-  color: #060824;
+  background-color: #03120e;
+  color: white;
   font-family: monospace;
   align-items: center;
   flex-direction: column;
@@ -16,45 +25,53 @@ header {
 }
 
 .roadmap {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: "Caveat";
+}
+
+header::selection {
+  background-color: red;
+  color: yellow;
 }
 
 .info {
   padding-top: 1.5rem;
-  font-size: 1rem;
-}
-
-body {
-  height: 200vh;
-}
-
-.post-btn {
-  padding: 1rem;
-  font-size: 1rem;
-  background-color: lightgreen;
-  margin-top: 1rem;
-  width: 10%;
-  min-width: fit-content;
+  font-size: 1.1rem;
 }
 
 .main {
   margin: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .default-resource {
   display: flex;
   justify-content: center;
   border: 3px solid black;
-  margin: 2rem;
   padding: 2rem;
-  background-color: lightblue;
   font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: #26413c;
+  color: white;
 }
 
-/* Colors -  */
+.default-resource-info {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  min-width: min-content;
+  margin: 0.3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 3px solid black;
+  background-color: #3e505b;
+  color: white;
+  border-radius: 1rem;
+}
+
+/* Colors - */
 .blue {
   background-color: blue;
 }
@@ -67,8 +84,17 @@ body {
 .yellow {
   background-color: yellow;
 }
+.orange {
+  background-color: orange;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.lightgreen {
+  background-color: lightgreen;
+}
 
-/* Font size - */
+/* Font sizes - */
 .large {
   font-size: 2rem;
 }
@@ -76,5 +102,5 @@ body {
   font-size: 1.5rem;
 }
 .small {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
